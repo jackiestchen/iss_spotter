@@ -23,7 +23,7 @@ const { fetchMyIP, fetchCoordsByIP, fetchISSFlyOverTimes, nextISSTimesForMyLocat
 //   if (error) {
 //     console.log("It didn't work!", error);
 //     return;
-//   } 
+//   }
 //   console.log("It worked! Returned data:", data);
 // })
 
@@ -33,7 +33,7 @@ nextISSTimesForMyLocation((error, passTimes) => {
   }
 
   printPassTimes(passTimes);
-})
+});
 
 
 
@@ -43,4 +43,4 @@ const printPassTimes = (data) => {
     const duration  = flyBy.duration;
     console.log(`Next pass at ${date} for ${duration} seconds!`);
   }
-}
+};
